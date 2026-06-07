@@ -290,13 +290,10 @@
         width: 15px;
       }
       .inline-mark-point-fallback {
-        background: var(--panel-soft);
-        border: 1px solid var(--line);
-        border-radius: 8px;
         display: grid;
-        gap: 8px;
+        gap: 6px;
         margin-top: 12px;
-        padding: 10px;
+        padding: 0;
       }
       .assessment-score {
         color: var(--success);
@@ -1309,8 +1306,14 @@
             {
               "id": "p-a-sa-1",
               "part": "(a)",
-              "label": "acceleration is proportional to displacement (from equilibrium) | Acceleration proportional to negative displacement is 1st mark only. | acceleration is in opposite direction to displacement | or towards a fixed point / equilibrium | Don’t accept “restoring force” for accln. | position",
-              "value": 2
+              "label": "acceleration is proportional to displacement from equilibrium",
+              "value": 1
+            },
+            {
+              "id": "p-a-sa-2",
+              "part": "(a)",
+              "label": "acceleration is in the opposite direction to displacement / towards equilibrium",
+              "value": 1
             }
           ]
         },
@@ -1324,8 +1327,32 @@
             {
               "id": "p-b-sa-1",
               "part": "(b)",
-              "label": "(i) | 3SF is an independent mark. | When g = 9.81 is used, allow either 0.502 or 0.503 for 2nd and 3rd marks. | ] | Use of g = 9.8 gives 0.502 Hz: award only 1 of first 2 marks if quoted as 0.502, 0.503 0.50 or 0.5 Hz. | answer to 3SF | (ii) | Allow ECF from any incorrect f from (b)(i).",
-              "value": 5
+              "label": "(i) correct use of the pendulum frequency / time-period relationship",
+              "value": 1
+            },
+            {
+              "id": "p-b-sa-2",
+              "part": "(b)",
+              "label": "(i) frequency = 0.502 or 0.503 Hz",
+              "value": 1
+            },
+            {
+              "id": "p-b-sa-3",
+              "part": "(b)",
+              "label": "(i) answer given to 3 significant figures",
+              "value": 1
+            },
+            {
+              "id": "p-b-sa-4",
+              "part": "(b)",
+              "label": "(ii) correct use of a = omega squared x / ECF from frequency",
+              "value": 1
+            },
+            {
+              "id": "p-b-sa-5",
+              "part": "(b)",
+              "label": "(ii) acceleration = 0.42 or 0.419 m s-2",
+              "value": 1
             }
           ]
         },
@@ -1339,8 +1366,20 @@
             {
               "id": "p-c-sa-1",
               "part": "(c)",
-              "label": "recognition of 20 oscillations of (shorter) pendulum | and / or 19 oscillations of (longer) pendulum | Explanation: difference of 1 oscillation or phase change of 2 | or Δt = 0.1 so n = 2 / 0.1 =20, or other acceptable point | time to next in phase condition = 38 (s) | Allow “back in phase (for the first time)” as a valid explanation. | [ or (T = 1.90 s so) (n + 1) × 1.90 = n × 2.00 | gives n = 19 (oscillations of longer pendulum)",
-              "value": 3
+              "label": "recognises 20 oscillations of the shorter pendulum and/or 19 of the longer pendulum",
+              "value": 1
+            },
+            {
+              "id": "p-c-sa-2",
+              "part": "(c)",
+              "label": "explains the phase/one-oscillation difference or uses a valid calculation method",
+              "value": 1
+            },
+            {
+              "id": "p-c-sa-3",
+              "part": "(c)",
+              "label": "time interval = 38 s",
+              "value": 1
             }
           ]
         }
@@ -1349,20 +1388,62 @@
         {
           "id": "sa-1",
           "part": "(a)",
-          "label": "acceleration is proportional to displacement (from equilibrium) | Acceleration proportional to negative displacement is 1st mark only. | acceleration is in opposite direction to displacement | or towards a fixed point / equilibrium | Don’t accept “restoring force” for accln. | position",
-          "value": 2
+          "label": "acceleration is proportional to displacement from equilibrium",
+          "value": 1
         },
         {
           "id": "sa-2",
-          "part": "(b)",
-          "label": "(i) | 3SF is an independent mark. | When g = 9.81 is used, allow either 0.502 or 0.503 for 2nd and 3rd marks. | ] | Use of g = 9.8 gives 0.502 Hz: award only 1 of first 2 marks if quoted as 0.502, 0.503 0.50 or 0.5 Hz. | answer to 3SF | (ii) | Allow ECF from any incorrect f from (b)(i).",
-          "value": 5
+          "part": "(a)",
+          "label": "acceleration is in the opposite direction to displacement / towards equilibrium",
+          "value": 1
         },
         {
           "id": "sa-3",
+          "part": "(b)",
+          "label": "(i) correct use of the pendulum frequency / time-period relationship",
+          "value": 1
+        },
+        {
+          "id": "sa-4",
+          "part": "(b)",
+          "label": "(i) frequency = 0.502 or 0.503 Hz",
+          "value": 1
+        },
+        {
+          "id": "sa-5",
+          "part": "(b)",
+          "label": "(i) answer given to 3 significant figures",
+          "value": 1
+        },
+        {
+          "id": "sa-6",
+          "part": "(b)",
+          "label": "(ii) correct use of a = omega squared x / ECF from frequency",
+          "value": 1
+        },
+        {
+          "id": "sa-7",
+          "part": "(b)",
+          "label": "(ii) acceleration = 0.42 or 0.419 m s-2",
+          "value": 1
+        },
+        {
+          "id": "sa-8",
           "part": "(c)",
-          "label": "recognition of 20 oscillations of (shorter) pendulum | and / or 19 oscillations of (longer) pendulum | Explanation: difference of 1 oscillation or phase change of 2 | or Δt = 0.1 so n = 2 / 0.1 =20, or other acceptable point | time to next in phase condition = 38 (s) | Allow “back in phase (for the first time)” as a valid explanation. | [ or (T = 1.90 s so) (n + 1) × 1.90 = n × 2.00 | gives n = 19 (oscillations of longer pendulum)",
-          "value": 3
+          "label": "recognises 20 oscillations of the shorter pendulum and/or 19 of the longer pendulum",
+          "value": 1
+        },
+        {
+          "id": "sa-9",
+          "part": "(c)",
+          "label": "explains the phase/one-oscillation difference or uses a valid calculation method",
+          "value": 1
+        },
+        {
+          "id": "sa-10",
+          "part": "(c)",
+          "label": "time interval = 38 s",
+          "value": 1
         }
       ]
     }
